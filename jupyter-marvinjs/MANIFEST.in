@@ -1,0 +1,2 @@
+recursive-include jupyter_marvinjs/static *.*
+include jupyter-marvinjs.json
