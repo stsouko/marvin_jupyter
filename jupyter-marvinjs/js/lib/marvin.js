@@ -39,6 +39,7 @@ var MarvinJSView = widgets.DOMWidgetView.extend({
         this.marvin.src = this.model.get('_marvin_url');
         this.marvin.width = '900';
         this.marvin.height = '450';
+        this.marvin.setAttribute('data-toolbars', 'reaction');
 
         // JavaScript -> Python update
         function marvin_export() {
