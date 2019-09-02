@@ -42,8 +42,9 @@ var MarvinJSView = widgets.DOMWidgetView.extend({
         this.marvin.setAttribute('data-toolbars', 'reaction');
 
         // JavaScript -> Python update
-        function marvin_export() {
-            this.model.set('_value', this.sketcher.exportAsMrv());
+        async function marvin_export() {
+            let mrv = await this.sketcher.exportStructure('mrv');
+            this.model.set('_value', mrv);
             this.model.save_changes();
         }
         function marvin_molchange() {
