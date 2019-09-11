@@ -1,4 +1,4 @@
-from CGRtools.files import MRVRead, MRVWrite
+from CGRtools.files import MRVread, MRVwrite
 from io import BytesIO, StringIO
 from ipywidgets import DOMWidget, register
 from traitlets import Unicode
@@ -22,13 +22,14 @@ class MarvinJS(DOMWidget):
 
     @property
     def structure(self):
-        with BytesIO(self._value.encode()) as f, MRVRead(f) as r:
-            return next(r)
+        if self._value:
+            with BytesIO(self._value.encode()) as f, MRVread(f) as r:
+                return next(r, None)
 
     @structure.setter
     def structure(self, data):
         with StringIO() as f:
-            with MRVWrite(f) as w:
+            with MRVwrite(f) as w:
                 w.write(data)
             data = f.getvalue()
         self._value = data
