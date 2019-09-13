@@ -8,8 +8,8 @@ const MarvinJSModel = widgets.DOMWidgetModel.extend({
         _view_name: 'MarvinJSView',
         _model_module: 'jupyter-marvinjs',
         _view_module: 'jupyter-marvinjs',
-        _model_module_version: '0.1.0',
-        _view_module_version: '0.1.0',
+        _model_module_version: '0.1.1',
+        _view_module_version: '0.1.1',
         _value: '',
         _marvin_url: ''
     })

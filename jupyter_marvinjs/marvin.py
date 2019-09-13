@@ -12,10 +12,10 @@ class MarvinJS(DOMWidget):
 
     _view_name = Unicode('MarvinJSView').tag(sync=True)
     _view_module = Unicode('jupyter-marvinjs').tag(sync=True)
-    _view_module_version = Unicode('^0.1.0').tag(sync=True)
+    _view_module_version = Unicode('^0.1.1').tag(sync=True)
     _model_name = Unicode('MarvinJSModel').tag(sync=True)
     _model_module = Unicode('jupyter-marvinjs').tag(sync=True)
-    _model_module_version = Unicode('^0.1.0').tag(sync=True)
+    _model_module_version = Unicode('^0.1.1').tag(sync=True)
 
     _value = Unicode('').tag(sync=True)
     _marvin_url = Unicode('').tag(sync=True)
