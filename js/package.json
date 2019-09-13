@@ -1,6 +1,6 @@
 {
   "name": "jupyter-marvinjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MarvinJS and CGRtools integration",
   "author": "Ramil Nugmanov",
   "main": "lib/index.js",

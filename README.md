@@ -9,11 +9,8 @@ Installation
 To install use pip:
 
     $ pip install jupyter_marvinjs
-    $ jupyter nbextension enable --py --sys-prefix jupyter_marvinjs
-
-To install for jupyterlab
-
-    $ jupyter labextension install jupyter_marvinjs
+    $ jupyter nbextension install --py --user jupyter_marvinjs
+    $ jupyter nbextension enable --py --user jupyter_marvinjs
 
 For a development installation (requires npm),
 
