@@ -158,7 +158,7 @@ setup_args = {
 
     'author': 'Ramil Nugmanov',
     'author_email': 'stsouko@live.ru',
-    'url': 'https://github.com//jupyter-marvinjs',
+    'url': 'https://github.com/stsouko/marvin_jupyter',
     'keywords': [
         'ipython',
         'jupyter',
