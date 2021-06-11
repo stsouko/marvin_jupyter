@@ -8,10 +8,9 @@ const MarvinJSModel = widgets.DOMWidgetModel.extend({
         _view_name: 'MarvinJSView',
         _model_module: 'jupyter-marvinjs',
         _view_module: 'jupyter-marvinjs',
-        _model_module_version: '0.1.1',
-        _view_module_version: '0.1.1',
-        _value: '',
-        _marvin_url: ''
+        _model_module_version: '0.1.2',
+        _view_module_version: '0.1.2',
+        _value: ''
     })
 });
 
@@ -20,8 +19,9 @@ const MarvinJSView = widgets.DOMWidgetView.extend({
     render: function () {
         const model = this.model;
         const marvin = document.createElement('iframe');
+
         marvin.id = 'marvinjs_sketch';
-        marvin.src = this.model.get('_marvin_url');
+        marvin.src = document.querySelector('body').getAttribute('data-base-url') + 'nbextensions/jupyter-marvinjs/mjs/editor.html';
         marvin.width = '900';
         marvin.height = '450';
         marvin.setAttribute('data-toolbars', 'reaction');

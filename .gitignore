@@ -6,9 +6,9 @@ build/
 node_modules/
 
 # Compiled javascript
-jupyter_marvinjs/static/
+jupyter_marvinjs/nbextension/
+jupyter_marvinjs/labextension/
 
-# OS X
-.DS_Store
-
-env/
+# Cookiecutter
+output/
+bower_components
