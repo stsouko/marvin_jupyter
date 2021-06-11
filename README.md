@@ -30,6 +30,10 @@ For loading structure to editor:
 Installation
 ------------
 
+First of all download MarvinJS distributive from chemaxon website.
+Unpack it to project with name `mjs`.
+Make sure `mjs` directory contains `editor.html` and located near to `setup.py`.
+
 To install use pip:
 
     $ python setup.py bdist_wheel
