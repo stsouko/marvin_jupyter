@@ -1,7 +1,7 @@
 jupyter-marvinjs
 ================
 
-MarvinJS and CGRtools integration
+MarvinJS and Chython integration
 
 ![](screenshot.png)
 
@@ -22,7 +22,7 @@ For accessing structure use `mjs.structure` property:
 
 For loading structure to editor:
 
-    mol = CGRtools.smiles('CCO')
+    mol = chython.smiles('CCO')
     mol.clean2d()
     mjs.structure = mol
 
@@ -32,14 +32,14 @@ Installation
 
 First of all download MarvinJS distributive from chemaxon website.
 Unpack it to project with name `mjs`.
-Make sure `mjs` directory contains `editor.html` and located near to `setup.py`.
+Make sure `mjs` directory contains `editor.html` and located at same level as `setup.py`.
 
 To install use pip:
 
     $ python setup.py bdist_wheel
     $ pip install jupyter_marvinjs-<version>.whl
 
-When not working:
+If not working:
 
     $ jupyter nbextension install --py --sys-prefix jupyter_marvinjs
     $ jupyter nbextension enable --py --sys-prefix jupyter_marvinjs

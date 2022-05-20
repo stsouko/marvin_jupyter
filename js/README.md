@@ -1,4 +1,4 @@
-MarvinJS and CGRtools integration
+MarvinJS and Chython integration
 
 Package Install
 ---------------

@@ -20,7 +20,7 @@ log.info('setup.py entered')
 log.info('$PATH=%s' % os.environ['PATH'])
 
 name = 'jupyter_marvinjs'
-LONG_DESCRIPTION = 'MarvinJS and CGRtools integration'
+LONG_DESCRIPTION = 'MarvinJS and Chython integration'
 
 # Get jupyter_marvinjs version
 version = get_version(pjoin(name, '_version.py'))
@@ -47,11 +47,11 @@ cmdclass['jsdeps'] = combine_commands(
 setup_args = dict(
     name=name,
     version=version,
-    description='MarvinJS and CGRtools integration',
+    description='MarvinJS and Chython integration',
     long_description=LONG_DESCRIPTION,
     include_package_data=True,
     install_requires=[
-        'ipywidgets>=7.6.0', 'CGRtools>=3.1', 'lxml'
+        'ipywidgets>=7.6.0', 'chython'
     ],
     packages=find_packages(),
     zip_safe=False,
@@ -69,10 +69,7 @@ setup_args = dict(
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'Topic :: Multimedia :: Graphics',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
     ],
 )
 
